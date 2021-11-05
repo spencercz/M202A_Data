@@ -5,7 +5,7 @@ window.onload = function(){
     var info = "Key_" + i + ": " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() + ":" + now.getMilliseconds();
     console.log(info);
     document.getElementById("data").textContent += info;
-    document.getElementById("data").textContent += "\n";
+    document.getElementById("data").textContent += "\r\n";
   });
   }
 }
