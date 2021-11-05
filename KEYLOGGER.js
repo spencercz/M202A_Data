@@ -4,7 +4,7 @@ window.onload = function(){
     var now = new Date();
     var info = "Key_" + i + ": " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() + ":" + now.getMilliseconds();
     console.log(info);
-    document.getElementById("data").append(data);
+    document.getElementById("data").textContent += data;
   });
   }
 }
