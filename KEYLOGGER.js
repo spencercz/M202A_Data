@@ -1,13 +1,5 @@
-// with great power comes great responsibility... -spencer
-var keys = [];
-document.addEventListener("keydown", log);
-
-function log(evt){
-    if(evt.keyCode == 8){
-        keys.push(evt.keyCode);
-    }
-    else{
-        keys.push(String.fromCharCode(evt.keyCode));
-    }
-    console.log(keys[keys.length-1]); //just for viewing outputs' sake--this could be anything
-}
+for (let i = 1; i < 6; i++){
+  document.getElementById("Key_" + i).addEventListener("click", function() {
+  var now = new Date();
+  console.log("Key " + i + ": " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds());
+ }
